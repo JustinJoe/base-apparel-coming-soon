@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" class="logo" />
+    <header class="container">
+      <img class="logo" src="images/logo.svg" alt="Base Apparel logo">
     </header>
 
-    <section>
-      <img src="./images/hero-mobile.jpg" alt="hero image" class="hero-img" />
+    <div class="hero-img"></div>
 
-      <div class="welcome">
-        <h1>We're <span>coming soon</span></h1>
+    <div class="cta container">
+      <h1>We're <span>coming soon</span></h1>
 
-        <p>
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <form action="">
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <div class="input-btn">
+            <a href="#"><img src="images/icon-arrow.svg" alt="" class="input-btn__img"></a>
+          </div>                    
+          <img src="images/icon-error.svg" alt="" class="input-error">
+        </label>
+      </form>      
+      
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/JustinJoe">Joseph Justin</a>.
         </p>
-
-        <form action="">
-          <label for="email"></label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-            required
-          />
-          <a href="http://" target="_blank" rel="noopener noreferrer"
-            ><img src="./images/icon-arrow.svg" alt="Submit arrow"
-          /></a>
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
-  </body>
+      </footer>
+    </div>
+    
+</div>
+</body>
 </html>
